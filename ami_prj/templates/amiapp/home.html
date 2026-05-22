@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - AMILife Insurance{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center mt-4">
+
+  <div class="w-100" style="max-width:1000px;">
+
+    <!-- HERO -->
+    <div class="text-center mb-4">
+
+      <h1 class="display-6 fw-semibold">
+        Protecting your future with care
+      </h1>
+
+      <p class="text-muted">
+        Trusted policies, quick claims, tailored quotes.
+      </p>
+
+    </div>
+
+    <!-- CARDS -->
+    <div class="row g-3">
+
+      <div class="col-12 col-md-4">
+        <a href="{% url 'know_insurance' %}"
+           class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+
+          <div class="card-body">
+            <h5 class="card-title">Know Your Insurance</h5>
+            <p class="card-text text-muted">
+              Understand coverages, benefits, and exclusions.
+            </p>
+          </div>
+
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <a href="{% url 'file_claim' %}"
+           class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+
+          <div class="card-body">
+            <h5 class="card-title">File a Claim</h5>
+            <p class="card-text text-muted">
+              Report an incident and track progress easily.
+            </p>
+          </div>
+
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <a href="{% url 'get_quote' %}"
+           class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+
+          <div class="card-body">
+            <h5 class="card-title">Get a Quote</h5>
+            <p class="card-text text-muted">
+              Receive a personalized policy quote in minutes.
+            </p>
+          </div>
+
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}Know Your Insurance - SecureLife Insurance{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center mt-4">
+
+  <div class="w-100" style="max-width:1000px;">
+
+    <!-- TITLE -->
+    <div class="bg-light text-muted text-center py-3 rounded shadow-sm mb-4">
+      <h2 class="mb-0 fw-bold">Know Your Insurance</h2>
+    </div>
+
+    <!-- INTRO TEXT -->
+    <p class="text-muted">
+      Here you'll find articles and FAQs to help you understand your policy. Sample sections:
+    </p>
+
+    <ul class="text-muted mb-4">
+      <li>Policy types and coverages</li>
+      <li>Frequently asked questions</li>
+      <li>Glossary of insurance terms</li>
+    </ul>
+
+    <!-- CARDS -->
+    <div class="row g-3">
+
+      <div class="col-12 col-md-4">
+        <a href="{% url 'coverage_details' %}" class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Coverage Details</h5>
+            <p class="card-text text-muted">
+              Learn about your policy coverages, benefits and protection terms
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <a href="{% url 'policydocs' %}" class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Policy Document</h5>
+            <p class="card-text text-muted">
+              Access and review your policy documents at any time.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <a href="{% url 'our_commitment' %}" class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Our Commitment</h5>
+            <p class="card-text text-muted">
+              Learn about our commitment to you and your family.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}File a Claim{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center mt-4">
+
+  <div class="w-100" style="max-width:1000px;">
+
+    <!-- TITLE (same width as card) -->
+    <div class="bg-light text-muted text-center py-3 rounded shadow-sm mb-4">
+        <h2 class="mb-0 fw-bold">File a Claim</h2>
+    </div>
+
+    <!-- CARD -->
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+            {% include 'include/fileClaims_text.html' %}
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="text-center mt-4 mb-5">
+
+        <a href="https://www.amilifeassurance.com"
+           target="_blank"
+           class="btn text-white btn-lg px-4 shadow-sm"
+           style="background-color:#c1121f; border:none;">
+
+            <i class="fas fa-file-signature me-2"></i>
+            Submit Your Claims
+
+        </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

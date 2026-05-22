@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Coverage Details{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center mt-4">
+
+    <div class="w-100" style="max-width:1000px;">
+
+        <!-- TITLE -->
+        <div class="bg-light text-muted text-center py-3 rounded shadow-sm mb-4">
+            <h2 class="mb-0 fw-bold">Know Your Insurance</h2>
+        </div>
+
+        <!-- CARD -->
+        <div class="card shadow-sm">
+
+            <div class="card-body">
+
+                <h5 class="card-title text-center">Coverage Details</h5>
+
+                <ul class="text-muted mt-4 mb-5 ps-3">
+                    {% include 'include/coverage_details_text.html' %}
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
