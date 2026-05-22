@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
-SECRET_KEY = 'replace-me-with-a-secure-key'
-DEBUG = True
+SECRET_KEY = os.environ.get('SECRET_KEY', 'your-default-secret-key')
+DEBUG = False
 ALLOWED_HOSTS = ['.vercel.app', 'localhost', '127.0.0.1','amilife_app.vercel.app','amilifeassurance.com']
 
 INSTALLED_APPS = [
