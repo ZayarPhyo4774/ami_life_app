@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+amienv/
+.env
+*.env
+!.env.example
+ami_prj/db.sqlite3
+ami_prj/staticfiles/
+media/
+.vercel/
+.vscode/
+.idea/
