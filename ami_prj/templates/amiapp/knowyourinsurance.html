@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Know Your Insurance - SecureLife Insurance{% endblock %}
+{% block title %}Know Your Insurance - AMI Life Insurance{% endblock %}
 
 {% block content %}
 
@@ -13,27 +13,13 @@
       <h2 class="mb-0 fw-bold">Know Your Insurance</h2>
     </div>
 
-    <!-- INTRO TEXT -->
-    <p class="text-muted">
-      Here you'll find articles and FAQs to help you understand your policy. Sample sections:
-    </p>
-
-    <ul class="text-muted mb-4">
-      <li>Policy types and coverages</li>
-      <li>Frequently asked questions</li>
-      <li>Glossary of insurance terms</li>
-    </ul>
-
     <!-- CARDS -->
-    <div class="row g-3">
+    <div class="row g-3 mt-3">
 
       <div class="col-12 col-md-4">
         <a href="{% url 'coverage_details' %}" class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title">Coverage Details</h5>
-            <p class="card-text text-muted">
-              Learn about your policy coverages, benefits and protection terms
-            </p>
+            <h5 class="card-title mt-3 text-center">Star World ကစားကွင်းတွင် ရရှိသော အာမခံဆိုတာဘာလဲ။</h5>
           </div>
         </a>
       </div>
@@ -41,10 +27,10 @@
       <div class="col-12 col-md-4">
         <a href="{% url 'policydocs' %}" class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title">Policy Document</h5>
-            <p class="card-text text-muted">
+            <h5 class="card-title mt-3 text-center">အာမခံအကာအကွယ်နှင့် အကျိုးခံစားခွင့်များက ဘာလဲ။</h5>
+            {% comment %} <p class="card-text text-muted">
               Access and review your policy documents at any time.
-            </p>
+            </p> {% endcomment %}
           </div>
         </a>
       </div>
@@ -52,10 +38,10 @@
       <div class="col-12 col-md-4">
         <a href="{% url 'our_commitment' %}" class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
           <div class="card-body">
-            <h5 class="card-title">Our Commitment</h5>
-            <p class="card-text text-muted">
+            <h5 class="card-title mt-3 text-center">ကျွန်ုပ်တို့၏ ကတိ</h5>
+            {% comment %} <p class="card-text text-muted">
               Learn about our commitment to you and your family.
-            </p>
+            </p> {% endcomment %}
           </div>
         </a>
       </div>
