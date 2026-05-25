@@ -17,28 +17,32 @@
 <body class="d-flex flex-column min-vh-100">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-light bg-light shadow-sm fixed-top py-3">
+<nav class="navbar navbar-light bg-light shadow-sm fixed-top py-2">
+  <div class="container d-flex align-items-center">
 
-    <div class="container d-flex align-items-center justify-content-between">
-
+    <!-- LEFT -->
+    <div class="nav-left">
       {% if show_back_button %}
-        <button type="button" class="btn btn-outline-primary" onclick="window.history.back(); ">
+        <button type="button"
+                class="btn btn-outline-primary btn-sm"
+                onclick="window.history.back();">
           <i class="fas fa-arrow-left me-1"></i> Back
         </button>
-      {% else %}
-        <div style="width: 3.5rem;"></div>
       {% endif %}
-
-      <a class="navbar-brand d-flex align-items-center mx-auto" href="/">
-          <img src="{% static 'images/logo.png' %}"
-            alt="Logo"
-            class="navbar-logo">
-      </a>
-
-      <div style="width: 3.5rem;"></div>
-
     </div>
-  </nav>
+
+    <!-- CENTER -->
+    <div class="nav-center mx-auto">
+      <a class="navbar-brand d-flex align-items-center justify-content-center" href="/">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" class="navbar-logo">
+      </a>
+    </div>
+
+    <!-- RIGHT (optional space for future icons) -->
+    <div class="nav-right"></div>
+
+  </div>
+</nav>
 
   <!-- MAIN CONTENT -->
   <main class="flex-grow-1" style="padding-top:150px;">

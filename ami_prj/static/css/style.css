@@ -71,20 +71,37 @@ footer .social a:hover{
 }
 
 .navbar {
-    height: 120px;           /* fixed navbar height */
-    padding: 0;
+    height: 150px;           /* fixed navbar height */
     display: flex;
     align-items: center;
+    
 }
 
-.navbar-brand img {
-    max-height: 250px;       /* control logo size */
-    width: auto;
-    align-items: center;
+.navbar-brand img{     /* control logo size */
+    width:auto;
+    align-items:center;
 }
 .navbar-logo {
-    position: relative;
-    height: 125px;
+    height: 150px;
+    width: auto;
+}
+
+/* Ensure perfect centering */
+.nav-left,
+.nav-right {
+    width: 80px; /* keeps center truly centered */
+}
+
+/* Mobile adjustment */
+@media (max-width: 576px) {
+    .navbar-logo {
+        height: 150px;
+    }
+
+    .nav-left,
+    .nav-right {
+        width: auto;
+    }
 }
 
 .btn-card i {

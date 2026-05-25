@@ -12,7 +12,8 @@ class QuoteRequestForm(forms.Form):
         }),
     )
     email = forms.EmailField(
-        label='Email',
+        label='အီးမေးလ်',
+        required=False,
         widget=forms.EmailInput(attrs={
             'class': 'form-control',
             'placeholder': 'you@example.com',
