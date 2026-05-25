@@ -11,9 +11,9 @@
     <!-- HERO -->
     <div class="text-center mb-4">
 
-      <h1 class="display-6 fw-semibold">
-        Protecting your future with AMI Life
-      </h1>
+      <h3 class=" fw-semibold mb-3" style="line-height:1.8;">
+      ပျော်ရွှင်မှုတိုင်းမှာ လုံခြုံ စိတ်ချရမှုပါ ရှိနေစေရန် AMI Life နှင့် Star World Playground တို့၏ ပူးပေါင်းဆောင်ရွက်မှုတစ်ခု ဖြစ်ပါသည်။
+      </h3>
 
       <p class="text-muted">
         "For better tommorows, together with you today."
@@ -26,13 +26,28 @@
 
       <div class="col-12 col-md-4">
         <a href="{% url 'know_insurance' %}"
-           class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
-
+           class="card btn-card text-decoration-none text-light h-100 shadow-sm">
+            
+            {% comment %} <div class="card-body">
+              <h5 class="card-title" style="line-height: 1.2;"><i class='fa-solid fa-file-contract'></i>Star World Playground တွင်ရရှိသော အသက်အာမခံအကြောင်း သိရှိလိုပါက <br> </h5>
+              <p class="card-text text-light">
+                (အာမခံ အကာအကွယ် အကျိုးခံစားခွင့်များ နှင့် ပတ်သက်၍ အသေးစိတ် လေ့လာနိုင်ပါသည်။)
+              </p>
+            </div> {% endcomment %}
           <div class="card-body">
-            <h5 class="card-title">Know Your Insurance</h5>
-            <p class="card-text text-muted">
-              Understand coverages, benefits, and exclusions.
+
+            <div class="mb-3 d-flex justify-content-center">
+                <i class="fa-solid fa-file-contract fa-2x"></i>
+            </div>
+
+            <h5 class="card-title" style="line-height:1.3;">
+                Star World Playground တွင်ရရှိသော အသက်အာမခံအကြောင်း သိရှိလိုပါက
+            </h5>
+
+            <p class="card-text text-light">
+                  (အာမခံ အကာအကွယ် အကျိုးခံစားခွင့်များ နှင့် ပတ်သက်၍ အသေးစိတ် လေ့လာနိုင်ပါသည်။)
             </p>
+
           </div>
 
         </a>
@@ -40,12 +55,15 @@
 
       <div class="col-12 col-md-4">
         <a href="{% url 'file_claim' %}"
-           class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+           class="card btn-card text-decoration-none text-light h-100 shadow-sm">
 
           <div class="card-body">
-            <h5 class="card-title">How to Claim?</h5>
-            <p class="card-text text-muted">
-              Report an incident and track progress easily.
+            <div class="mb-3 d-flex justify-content-center">
+                <i class="fa-solid fa-file-signature fa-2x"></i>
+            </div>
+            <h5 class="card-title" style="line-height: 1.2;">အာမခံ  လျော်ကြေးနှင့် ပတ်သက်၍ အသေးစိတ် သိရှိလိုပါက</h5>
+            <p class="card-text text-light">
+             (လျော်ကြေးတောင်းခံမှု အသေးစိတ် အချက်အလက်များအား လေ့လာနိုင်ပြီး လျော်ကြေးအား ဤနေရာတွင် တစ်ခါတည်း တောင်းခံနိုင်ပါသည်။) 
             </p>
           </div>
 
@@ -54,12 +72,15 @@
 
       <div class="col-12 col-md-4">
         <a href="{% url 'get_quote' %}"
-           class="card btn-card text-decoration-none text-dark h-100 shadow-sm">
+           class="card btn-card text-decoration-none text-light h-100 shadow-sm">
 
           <div class="card-body">
-            <h5 class="card-title">Get in touch</h5>
-            <p class="card-text text-muted">
-              Contact us anytime for guidance and answers to your insurance needs.
+            <div class="mb-3 d-flex justify-content-center">
+                <i class="fa-solid fa-phone fa-2x"></i>
+            </div>
+            <h5 class="card-title" style="line-height: 1.2;">အသက်အာမခံနှင့် ပတ်သက်၍ မေးမြန်းစုံစမ်း တိုင်ပင်လိုပါက </h5>
+            <p class="card-text text-light">
+              (လူကြီးမင်း၏ နာမည်နှင့် ဖုန်းနံပါတ်အား ဤနေရာတွင် ချန်ထားပေးခဲ့ပါက AMI Life မှ ဆက်သွယ် ကူညီ ဆောင်ရွက်ပေးပါမည်။)
             </p>
           </div>
 

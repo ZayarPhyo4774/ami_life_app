@@ -1,5 +1,5 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,7 +22,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       {% if show_back_button %}
-        <button type="button" class="btn btn-outline-primary" onclick="window.history.back();">
+        <button type="button" class="btn btn-outline-primary" onclick="window.history.back(); ">
           <i class="fas fa-arrow-left me-1"></i> Back
         </button>
       {% else %}
@@ -30,14 +30,9 @@
       {% endif %}
 
       <a class="navbar-brand d-flex align-items-center mx-auto" href="/">
-        <img src="{% static 'images/logo.png' %}"
-             alt="Logo"
-             height="110"
-             class="d-inline-block align-text-top">
-
-        <span class="h5 mb-0 ms-2 company-name">
-          AMI Life Insurance
-        </span>
+          <img src="{% static 'images/logo.png' %}"
+            alt="Logo"
+            class="navbar-logo">
       </a>
 
       <div style="width: 3.5rem;"></div>
@@ -60,12 +55,12 @@
     <div class="container text-center">
 
       <p class="mb-2">
-        &copy; {{ company|default:'AMI Life Insurance' }} 2026
+        &copy; 2026 AMI Life / All rights reserved by AYA Myanmar Life Assurance Company Limited.
       </p>
 
       <div class="social">
 
-        <a href="https://www.amilifeassurance.com" class="mx-2 text-muted">
+        <a href="https://www.facebook.com/share/18T1zRaa4k/?mibextid=wwXIfr" class="mx-2 text-muted">
           <i class="fab fa-facebook fa-lg"></i>
         </a>
 
@@ -73,7 +68,7 @@
           <i class="fab fa-instagram fa-lg"></i>
         </a> {% endcomment %}
 
-        <a href="#" class="mx-2 text-muted">
+        <a href="https://www.linkedin.com/company/ayamyanmarlifeassurance/" class="mx-2 text-muted">
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
 

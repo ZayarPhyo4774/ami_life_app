@@ -3,7 +3,7 @@ from django import forms
 
 class QuoteRequestForm(forms.Form):
     full_name = forms.CharField(
-        label='Full name',
+        label='အမည်',
         max_length=100,
         widget=forms.TextInput(attrs={
             'class': 'form-control',
@@ -12,7 +12,7 @@ class QuoteRequestForm(forms.Form):
         }),
     )
     email = forms.EmailField(
-        label='Email address',
+        label='Email',
         widget=forms.EmailInput(attrs={
             'class': 'form-control',
             'placeholder': 'you@example.com',
@@ -20,21 +20,21 @@ class QuoteRequestForm(forms.Form):
         }),
     )
     phone_number = forms.CharField(
-        label='Phone number',
+        label='ဖုန်းနံပါတ်',
         max_length=30,
         widget=forms.TextInput(attrs={
             'class': 'form-control',
-            'placeholder': '09 123 456 789',
+            'placeholder': '၀၉ ၁၂၃ ၄၅၆ ၇၈၉',
             'autocomplete': 'tel',
         }),
     )
     message = forms.CharField(
-        label='Message',
+        label='အကြောင်းအရာ',
         max_length=1000,
         required=False,
         widget=forms.Textarea(attrs={
             'class': 'form-control',
-            'placeholder': 'Tell us what kind of quote you need.',
+            'placeholder': 'မေးမြန်းလိုသည်များကို ရေးသားပါ',
             'rows': 4,
         }),
     )
